@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_Gxo7wN4eEemPD699X8rBqA" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_Gxo7wd4eEemPD699X8rBqA"/>
+  <parameters xmi:id="_Gxo7wt4eEemPD699X8rBqA">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_Gxo7w94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_Gxo7xN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_Gxo7xd4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_Gxo7xt4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_Gxo7x94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_Gxo7yN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_Gxo7yd4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_Gxo7yt4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_Gxo7y94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_Gxo7zN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_Gxo7zd4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_Gxo7zt4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_Gxo7z94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_Gxo70N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_Gxo70d4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_Gxo70t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_Gxo7094eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBUpsMl9Eei6HPaK2mKAAg" name="DQTechnical" xmi:id="_Gxo71N4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBH1YMl9Eei6HPaK2mKAAg" name="DataMasking" xmi:id="_Gxo71d4eEemPD699X8rBqA"/>
+    <routinesParameter id="_k67GwMl9Eei6HPaK2mKAAg" name="DataOperation" xmi:id="_Gxo71t4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBNU8Ml9Eei6HPaK2mKAAg" name="DataQualityDependencies" xmi:id="_Gxo7194eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBK4sMl9Eei6HPaK2mKAAg" name="DataQuality" xmi:id="_Gxo72N4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBSNcMl9Eei6HPaK2mKAAg" name="DqStringHandling" xmi:id="_Gxo72d4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBXtAMl9Eei6HPaK2mKAAg" name="MDM" xmi:id="_Gxo72t4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lAwpAMl9Eei6HPaK2mKAAg" name="Mathematical" xmi:id="_Gxo7294eEemPD699X8rBqA"/>
+    <routinesParameter id="_lAzFQMl9Eei6HPaK2mKAAg" name="Numeric" xmi:id="_Gxo73N4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lA1hgMl9Eei6HPaK2mKAAg" name="Relational" xmi:id="_Gxo73d4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBaJQMl9Eei6HPaK2mKAAg" name="SQLike" xmi:id="_Gxo73t4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lA5y8Ml9Eei6HPaK2mKAAg" name="StringHandling" xmi:id="_Gxo7394eEemPD699X8rBqA"/>
+    <routinesParameter id="_lA8PMMl9Eei6HPaK2mKAAg" name="TalendDataGenerator" xmi:id="_Gxo74N4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lA_SgMl9Eei6HPaK2mKAAg" name="TalendDate" xmi:id="_Gxo74d4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBFZIMl9Eei6HPaK2mKAAg" name="TalendStringUtil" xmi:id="_Gxo74t4eEemPD699X8rBqA"/>
+    <routinesParameter id="_lBCV0Ml9Eei6HPaK2mKAAg" name="TalendString" xmi:id="_Gxo7494eEemPD699X8rBqA"/>
+  </parameters>
+  <node componentName="cKafka" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128" xmi:id="_Gxo75N4eEemPD699X8rBqA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cKafka_1" xmi:id="_Gxo75d4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;localhost:9092&quot;" xmi:id="_Gxo75t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;1&quot;" xmi:id="_Gxo7594eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="TOPIC" value="&quot;server1.dbo.customers&quot;" xmi:id="_Gxo76N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;talend&quot;" xmi:id="_Gxo76d4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="PARTITIONER" show="false" value="&quot;org.apache.kafka.clients.producer.internals.DefaultPartitioner&quot;" xmi:id="_Gxo76t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SERIALIZER_CLASS" show="false" value="&quot;org.apache.kafka.common.serialization.StringSerializer&quot;" xmi:id="_Gxo7694eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="KEY_SERIALIZER_CLASS" show="false" value="&quot;&quot;" xmi:id="_Gxo77N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SEND_BUFFER_BYTES" value="&quot;131072&quot;" xmi:id="_Gxo77d4eEemPD699X8rBqA"/>
+    <elementParameter field="CLOSED_LIST" name="REQUEST_REQUIRED_ACKS" show="false" value="1" xmi:id="_Gxo77t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="REQUEST_TIMEOUT_MS" show="false" value="&quot;30000&quot;" xmi:id="_Gxo7794eEemPD699X8rBqA"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION_CODEC" show="false" value="none" xmi:id="_Gxo78N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="BUFFER_MEMORY_SIZE" show="false" value="&quot;33554432&quot;" xmi:id="_Gxo78d4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="RETRIES" show="false" value="&quot;0&quot;" xmi:id="_Gxo78t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="RETRY_BACKOFF_MS" value="&quot;100&quot;" xmi:id="_Gxo7894eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="PRODUCER_BATCH_SIZE" show="false" value="&quot;16384&quot;" xmi:id="_Gxo79N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="CONNECTION_MAX_IDLE_MS" value="&quot;540000&quot;" xmi:id="_Gxo79d4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="LINGER_MS" show="false" value="&quot;0&quot;" xmi:id="_Gxo79t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="MAX_BLOCK_MS" show="false" value="&quot;60000&quot;" xmi:id="_Gxo7994eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="MAX_REQUEST_SIZE" show="false" value="&quot;1048576&quot;" xmi:id="_Gxo7-N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="RECEIVE_BUFFER_BYTES" value="&quot;32768&quot;" xmi:id="_Gxo7-d4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="MAX_IN_FLIGHT_REQUEST" show="false" value="&quot;5&quot;" xmi:id="_Gxo7-t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="METADATA_MAX_AGE_MS" value="&quot;300000&quot;" xmi:id="_Gxo7-94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="RECONNECT_BACKOFF_MS" value="&quot;50&quot;" xmi:id="_Gxo7_N4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="BARRIER_AWAIT_TIMEOUT_MS" value="&quot;10000&quot;" xmi:id="_Gxo7_d4eEemPD699X8rBqA"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT_ENABLE" value="true" xmi:id="_Gxo7_t4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="AUTO_COMMIT_INTERVAL_MS" value="&quot;5000&quot;" xmi:id="_Gxo7_94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="FETCH_MIN_BYTES" value="&quot;1&quot;" xmi:id="_Gxo8AN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="FETCH_WAIT_MAX_MS" value="&quot;100&quot;" xmi:id="_Gxo8Ad4eEemPD699X8rBqA"/>
+    <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET" value="earliest" xmi:id="_Gxo8At4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="HEARTBEAT_INTERVAL_MS" value="&quot;3000&quot;" xmi:id="_Gxo8A94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="MAX_PARTITION_FETCH_BYTES" value="&quot;1048576&quot;" xmi:id="_Gxo8BN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SESSION_TIMEOUT_MS" value="&quot;30000&quot;" xmi:id="_Gxo8Bd4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="PARTITION_ASSIGNOR" value="&quot;org.apache.kafka.clients.consumer.RangeAssignor&quot;" xmi:id="_Gxo8Bt4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="CONSUMER_REQUEST_TIMEOUT_MS" value="&quot;40000&quot;" xmi:id="_Gxo8B94eEemPD699X8rBqA"/>
+    <elementParameter field="TABLE" name="URI_OPTIONS" xmi:id="_Gxo8CN4eEemPD699X8rBqA"/>
+    <elementParameter field="PASSWORD" name="SSL_KEY_PASSWORD" value="0RMsyjmybrE=" xmi:id="_Gxo8Cd4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SSL_KEYSTORE_LOCATION" value="&quot;&quot;" xmi:id="_Gxo8Ct4eEemPD699X8rBqA"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="0RMsyjmybrE=" xmi:id="_Gxo8C94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSTORE_LOCATION" value="&quot;&quot;" xmi:id="_Gxo8DN4eEemPD699X8rBqA"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSTORE_PASSWORD" value="0RMsyjmybrE=" xmi:id="_Gxo8Dd4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SSL_CIPHER_SUITS" value="&quot;&quot;" xmi:id="_Gxo8Dt4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SSL_ENDPOINT_ALGORITHM" value="&quot;&quot;" xmi:id="_Gxo8D94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SASL_KERBEROS_SERVICE_NAME" value="&quot;&quot;" xmi:id="_Gxo8EN4eEemPD699X8rBqA"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_PROTOCOL" value="PLAINTEXT" xmi:id="_Gxo8Ed4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_Gxo8Et4eEemPD699X8rBqA"/>
+  </node>
+  <node componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="128" xmi:id="_Gxo8E94eEemPD699X8rBqA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cLog_1" xmi:id="_Gxo8FN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="LOGGING_CATEGORY" value="&quot;TestRoute.cLog_1&quot;" xmi:id="_Gxo8Fd4eEemPD699X8rBqA"/>
+    <elementParameter field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN" xmi:id="_Gxo8Ft4eEemPD699X8rBqA"/>
+    <elementParameter field="RADIO" name="NOTHING" value="false" xmi:id="_Gxo8F94eEemPD699X8rBqA"/>
+    <elementParameter field="RADIO" name="GROUP_SIZE" value="false" xmi:id="_Gxo8GN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="SIZE" show="false" value="1" xmi:id="_Gxo8Gd4eEemPD699X8rBqA"/>
+    <elementParameter field="RADIO" name="GROUP_INTERVAL" value="false" xmi:id="_Gxo8Gt4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="INTERVAL" show="false" value="1" xmi:id="_Gxo8G94eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="DELAY" show="false" value="0" xmi:id="_Gxo8HN4eEemPD699X8rBqA"/>
+    <elementParameter field="CHECK" name="ACTIVE_ONLY" show="false" value="true" xmi:id="_Gxo8Hd4eEemPD699X8rBqA"/>
+    <elementParameter field="RADIO" name="FORMAT" value="false" xmi:id="_Gxo8Ht4eEemPD699X8rBqA"/>
+    <elementParameter field="TABLE" name="ARGUMENTS" show="false" xmi:id="_Gxo8H94eEemPD699X8rBqA"/>
+    <elementParameter field="RADIO" name="USE_LOGEIP" value="true" xmi:id="_Gxo8IN4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;${in.body}\n&quot;" xmi:id="_Gxo8Id4eEemPD699X8rBqA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_Gxo8It4eEemPD699X8rBqA"/>
+  </node>
+  <connection connectorName="ROUTE" label="route1" lineStyle="14" metaname="cKafka_1" offsetLabelX="0" offsetLabelY="0" source="cKafka_1" target="cLog_1" xmi:id="_Gxo8I94eEemPD699X8rBqA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route1" xmi:id="_Gxo8JN4eEemPD699X8rBqA"/>
+  </connection>
+  <subjob xmi:id="_Gxo8Jd4eEemPD699X8rBqA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cKafka_1" xmi:id="_Gxo8Jt4eEemPD699X8rBqA"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_Gxo8J94eEemPD699X8rBqA"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_Gxo8KN4eEemPD699X8rBqA"/>
+  </subjob>
+  <subjob xmi:id="_Gxo8Kd4eEemPD699X8rBqA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cLog_1" xmi:id="_Gxo8Kt4eEemPD699X8rBqA"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_Gxo8K94eEemPD699X8rBqA"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_Gxo8LN4eEemPD699X8rBqA"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_55dda168-00c0-4a46-93ec-2a9450122100"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oDqkjXXpvDfosuQMYgEMsQgGVcCsi6skvqbH7GpAqbdsdkNBneOMRGPritRvovEbzKVdMpO+dO8u
+EDGCuEiKkg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b2e6bac3-96e1-473e-bb24-184bf3caa809"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pzw/yfVxX+HkDpgxjciIBE/pX2GIBIm+8VWueAJOy4x6vsILJUkAUkggkxW2zlOcK4+TTsaMz318
+OxsLt1RPOQ==</DigestValue></Reference></SignedInfo><SignatureValue>RTy8+EaxyAOmmWbnoe9H4QuNPnDvTIiW3dqL6iKuN9+KbOpm/g1psNrDwvySAS1CLSiW9y619iR1
+S9pSFXt5PVVEqxx12K488B8AbSdLFMizKlrOzEDpnRqebMjF4NRsQv6ggwVZvgIn9qUZRLAyz+4e
+0ahzCTl+7lvSBA7rmb33aOsCtiDyddTPdrYSYg5GtDFu5cm3L9AOBinhVJq0FjYRGW0isNGbRJS/
+fgKT75l5J3mkeIfSxGwj0KATwCxytbSCWknNxgxqcblbPbwj0tNeMZooj/R+5krlgEePnQuizDM7
+TzABZBfjck4x6fpP2qK0KUEH6I1dk/9TULnBSQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b2e6bac3-96e1-473e-bb24-184bf3caa809" Target="#_55dda168-00c0-4a46-93ec-2a9450122100"><Timestamp>2019-09-23 16:20:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
