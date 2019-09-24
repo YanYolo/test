@@ -1,0 +1,276 @@
+<wsdl:definitions xmlns:def="http://definition.webservices.daa.ema.com/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="daamock"
+	targetNamespace="http://definition.webservices.daa.ema.com/">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://definition.webservices.daa.ema.com/">
+			<xsd:element name="LowBalance">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="credentials" type="def:credentialsType" />
+						<xsd:element name="LowBalanceInput" type="def:LowBalanceInputType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="LowBalanceResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="return" type="def:returnType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="credentialsType">
+				<xsd:sequence>
+					<xsd:element name="login" type="xsd:string" />
+					<xsd:element name="password" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="LowBalanceInputType">
+				<xsd:sequence>
+					<xsd:element name="MIN" type="xsd:string" />
+					<xsd:element name="airtimeBalance" type="xsd:string" />
+					<xsd:element name="lowBalanceType" type="xsd:string" />
+					<xsd:element name="transaction_ID" type="xsd:string" />
+					<xsd:element name="partnerTimestamp" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="TopupNotification">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="credentials" type="def:credentialsType" />
+						<xsd:element name="TopupNotificationInput" type="def:TopupNotificationInputType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="TopupNotificationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="return" type="def:returnType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="returnType">
+				<xsd:sequence>
+					<xsd:element name="DAA_Transaction_ID" type="xsd:string" />
+					<xsd:element name="DAAErrorCode" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="TopupNotificationInputType">
+				<xsd:sequence>
+					<xsd:element name="mobileIdentityNumber" type="xsd:string" />
+					<xsd:element name="partnerTimestamp" type="xsd:string" />
+					<xsd:element name="mainBalance" type="xsd:string" />
+					<xsd:element name="topUpAmount" type="xsd:string" />
+					<xsd:element name="topUpType" type="xsd:string" />
+					<xsd:element name="transaction_ID" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="InsufficientBalanceUsage">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="credentials" type="def:credentialsType" />
+						<xsd:element name="InsufficientBalanceUsageInput"
+							type="def:InsufficientBalanceUsageInputType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsufficientBalanceUsageResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="return" type="def:returnType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="InsufficientBalanceUsageInputType">
+				<xsd:sequence>
+					<xsd:element name="msisdn" type="xsd:string" />
+					<xsd:element name="lowBalanceType"
+						type="xsd:string" />
+					<xsd:element name="transactionId" type="xsd:string" />
+					<xsd:element name="partnerTimestamp"
+						type="xsd:string" />
+					<xsd:element name="airtimeBalance" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="InsufficientBalanceConversion">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="credentials" type="def:credentialsType" />
+						<xsd:element name="InsufficientBalanceConversionInput"
+							type="def:InsufficientBalanceConversionInputType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsufficientBalanceConversionResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="return" type="def:returnType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="InsufficientBalanceConversionInputType">
+				<xsd:sequence>
+					<xsd:element name="msisdn" type="xsd:string" />
+					<xsd:element name="brand" type="xsd:string" />
+					<xsd:element name="transactionId" type="xsd:string" />
+					<xsd:element name="usageTimestamp" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="BundleOnExpiry">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="credentials" type="def:credentialsType" />
+						<xsd:element name="BundleOnExpiryInput" type="def:BundleOnExpiryInputType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="BundleOnExpiryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="return" type="def:returnType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="BundleOnExpiryInputType">
+				<xsd:sequence>
+					<xsd:element name="msisdn" type="xsd:string" />
+					<xsd:element name="brand" type="xsd:string" />
+					<xsd:element name="transactionId" type="xsd:string" />
+					<xsd:element name="usageTimestamp" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="TopupNotificationRequest">
+		<wsdl:part name="parameters" element="def:TopupNotification">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="LowBalanceRequest">
+		<wsdl:part name="parameters" element="def:LowBalance">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="TopupNotificationResponse">
+		<wsdl:part name="parameters" element="def:TopupNotificationResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsufficientBalanceUsageRequest">
+		<wsdl:part name="parameters" element="def:InsufficientBalanceUsage">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="BundleOnExpiryResponse">
+		<wsdl:part name="parameters" element="def:BundleOnExpiryResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsufficientBalanceUsageResponse1">
+		<wsdl:part name="parameters" element="def:InsufficientBalanceUsageResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsufficientBalanceConversionRequest">
+		<wsdl:part name="parameters" element="def:InsufficientBalanceConversion">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="LowBalanceResponse">
+		<wsdl:part name="parameters" element="def:LowBalanceResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="BundleOnExpiryRequest">
+		<wsdl:part name="parameters" element="def:BundleOnExpiry">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsufficientBalanceConversionResponse">
+		<wsdl:part name="parameters" element="def:InsufficientBalanceConversionResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="DaaWebServicePortBinding">
+		<wsdl:operation name="LowBalance">
+			<wsdl:input message="def:LowBalanceRequest">
+			</wsdl:input>
+			<wsdl:output message="def:LowBalanceResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="TopupNotification">
+			<wsdl:input message="def:TopupNotificationRequest">
+			</wsdl:input>
+			<wsdl:output message="def:TopupNotificationResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="InsufficientBalanceUsage">
+			<wsdl:input message="def:InsufficientBalanceUsageRequest">
+			</wsdl:input>
+			<wsdl:output message="def:InsufficientBalanceUsageResponse1">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="InsufficientBalanceConversion">
+			<wsdl:input message="def:InsufficientBalanceConversionRequest">
+			</wsdl:input>
+			<wsdl:output message="def:InsufficientBalanceConversionResponse">
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="BundleOnExpiry">
+			<wsdl:input message="def:BundleOnExpiryRequest">
+			</wsdl:input>
+			<wsdl:output message="def:BundleOnExpiryResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="DaaWebServicePortBinding" type="def:DaaWebServicePortBinding">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="LowBalance">
+			<soap:operation
+				soapAction="http://definition.webservices.daa.ema.com/LowBalance" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="TopupNotification">
+			<soap:operation
+				soapAction="http://definition.webservices.daa.ema.com/TopupNotification" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="InsufficientBalanceUsage">
+			<soap:operation
+				soapAction="http://definition.webservices.daa.ema.com/InsufficientBalanceUsage" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="InsufficientBalanceConversion">
+			<soap:operation
+				soapAction="http://definition.webservices.daa.ema.com/InsufficientBalanceConversion" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="BundleOnExpiry">
+			<soap:operation
+				soapAction="http://definition.webservices.daa.ema.com/BundleOnExpiry" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="DaaWebServicePortBinding">
+		<wsdl:port name="DaaWebServicePortBinding" binding="def:DaaWebServicePortBinding">
+			<soap:address
+				location="http://10.128.115.72:8080/daamock/mockDaaWebServicePortBinding/mockDaaWebServicePortBinding" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
