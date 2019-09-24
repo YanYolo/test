@@ -10,13 +10,13 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/routes/testroute_0.1</module>
     <module>jobs/process/DI/testkafkaconnection_0.1</module>
     <module>code/beans</module>
     <module>jobs/process_storm/kafkaconsumer_0.1</module>
     <module>jobs/process/testlocal_0.1</module>
     <module>jobs/routes/SMART/readfromkakfaandconsumews_0.1</module>
     <module>jobs/process/DI/loadkafka2snowflake_0.1</module>
+    <module>jobs/routes/consumekafka_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST</talend.project.name>

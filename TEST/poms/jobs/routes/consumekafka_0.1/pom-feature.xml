@@ -4,15 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.example.test.route</groupId>
-    <artifactId>TestRoute-Kar</artifactId>
+    <artifactId>ConsumeKafka-Kar</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <relativePath>/</relativePath>
   </parent>
   <groupId>org.example.test.route</groupId>
-  <artifactId>TestRoute-feature</artifactId>
+  <artifactId>ConsumeKafka-feature</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>TEST TestRoute-0.1.0-SNAPSHOT (0.1,Routes) Feature</name>
+  <name>TEST ConsumeKafka-0.1.0-SNAPSHOT (0.1,Routes) Feature</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -21,12 +21,12 @@
     <talend.job.version>0.1</talend.job.version>
     <cloud.publisher.skip>false</cloud.publisher.skip>
     <talend.project.name.lowercase>test</talend.project.name.lowercase>
-    <talend.job.path>test/testroute_0_1</talend.job.path>
+    <talend.job.path>test/consumekafka_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>TEST</talend.project.name>
     <talend.product.version>7.1.1.20181026_1147</talend.product.version>
-    <talend.job.finalName>testroute_0_1</talend.job.finalName>
+    <talend.job.finalName>consumekafka_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.test.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.test.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -35,7 +35,7 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>TestRoute</talend.job.name>
+    <talend.job.name>ConsumeKafka</talend.job.name>
     <talend.job.id>_Cf3I8NXYEemU6ajRYD96Sg</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
@@ -56,7 +56,7 @@
               <goal>create-kar</goal>
             </goals>
             <configuration>
-              <finalName>testroute_0_1</finalName>
+              <finalName>consumekafka_0_1</finalName>
               <resourcesDir>${project.build.directory}/bin</resourcesDir>
               <featuresFile>${basedir}/src/main/bundle-resources/feature.xml</featuresFile>
             </configuration>
@@ -75,7 +75,7 @@
             </goals>
             <configuration>
               <groupId>org.example.test.job</groupId>
-              <artifactId>TestRoute_LoadKafka2Snowflake</artifactId>
+              <artifactId>ConsumeKafka_LoadKafka2Snowflake</artifactId>
               <version>0.1.0</version>
               <packaging>jar</packaging>
               <file>../../process/DI/loadkafka2snowflake_0.1/target/loadkafka2snowflake_0_1.jar</file>
@@ -123,7 +123,7 @@
                 <configuration>
                   <file>${basedir}/src/main/bundle-resources/feature.xml</file>
                   <groupId>org.example.test.route</groupId>
-                  <artifactId>TestRoute-feature</artifactId>
+                  <artifactId>ConsumeKafka-feature</artifactId>
                   <version>0.1.0-SNAPSHOT</version>
                   <classifier>features</classifier>
                   <packaging>xml</packaging>
