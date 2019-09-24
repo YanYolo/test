@@ -17,13 +17,28 @@
     <module>jobs/routes/SMART/readfromkakfaandconsumews_0.1</module>
     <module>jobs/process/DI/loadkafka2snowflake_0.1</module>
     <module>jobs/routes/consumekafka_0.1</module>
+    <module>jobs/routes/r08_routingslip_0.1</module>
+    <module>jobs/routes/r06_messagerouter_0.1</module>
+    <module>jobs/routes/r05_redirectmessage_0.1</module>
+    <module>jobs/routes/r12_loadbalance_0.1</module>
+    <module>jobs/routes/r10_calljobs_0.1</module>
+    <module>jobs/routes/r14_sendjms_0.1</module>
+    <module>jobs/routes/r07_messagesplitter_0.1</module>
+    <module>jobs/routes/r13_throttleanddelay_0.1</module>
+    <module>jobs/routes/r02_logging_0.1</module>
+    <module>jobs/routes/r11_wiretap_0.1</module>
+    <module>jobs/routes/r09_multicast_0.1</module>
+    <module>jobs/routes/r03_addbodyheader_0.1</module>
+    <module>jobs/routes/r01_consumefile_0.1</module>
+    <module>jobs/routes/r14_readjms_0.1</module>
+    <module>jobs/routes/r04_usingjavabeans_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
