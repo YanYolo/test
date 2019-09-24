@@ -30,7 +30,7 @@
     <talend.pigudf.groupid>org.example.test.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.test.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -59,27 +59,6 @@
               <finalName>consumekafka_0_1</finalName>
               <resourcesDir>${project.build.directory}/bin</resourcesDir>
               <featuresFile>${basedir}/src/main/bundle-resources/feature.xml</featuresFile>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>2.5.1</version>
-        <executions>
-          <execution>
-            <id>install-jar-lib-0</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>install-file</goal>
-            </goals>
-            <configuration>
-              <groupId>org.example.test.job</groupId>
-              <artifactId>ConsumeKafka_LoadKafka2Snowflake</artifactId>
-              <version>0.1.0</version>
-              <packaging>jar</packaging>
-              <file>../../process/DI/loadkafka2snowflake_0.1/target/loadkafka2snowflake_0_1.jar</file>
-              <generatePom>true</generatePom>
             </configuration>
           </execution>
         </executions>
